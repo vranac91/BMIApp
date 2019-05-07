@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#90caf9</color>
+    <color name="colorPrimaryDark">#5d99c6</color>
+    <color name="colorAccent">#303f9f</color>
+
+    <color name="underweight">#66ABE7</color>
+    <color name="normal">#67C241</color>
+    <color name="overweight">#C16F2D</color>
+    <color name="obese">#BC2D2C</color>
+</resources>

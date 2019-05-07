@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">BMIApp</string>
+    <string name="appTitleText">BMI Index Calculator</string>
+    <string name="appDescText">Input your weight in "kg" and your height in "m" in order to calculate your BMI!</string>
+    <string name="heightInputPlaceholder">Enter your height</string>
+    <string name="weightInputPlaceholder">Enter your weight</string>
+    <string name="calculateButtonText">Calculate</string>
+    <string name="underweightTitle">Underweight</string>
+    <string name="normalTitle">Normal</string>
+    <string name="overweightTitle">Overweight</string>
+    <string name="obeseTitle">Obese</string>
+    <string name="underweightDescription">A BMI of less than 18.5 indicates that you are underweight, so you may need to put on some weight. You are recommended to ask your doctor or a dietitian for advice.</string>
+    <string name="normalDescription">A BMI of 18.5–24.9 indicates that you are at a healthy weight for your height. By
+        maintaining a healthy weight, you lower your risk of developing serious health problems.</string>
+    <string name="overweightDescription">A BMI of 25–29.9 indicates that you are slightly overweight. You may be advised
+        to lose some weight for health reasons. You are recommended to talk to your doctor or a dietitian for advice.</string>
+    <string name="obeseDescription">A BMI of over 30 indicates that you are heavily overweight. Your health may be at risk if you do not lose weight. You are recommended to talk to your doctor or a dietitian for advice.</string>
+    <string name="weightFieldName">Weight (kg)</string>
+    <string name="heightFieldName">Height (m)</string>
+    <string name="newCalculationButtonText">New calculation</string>
+    <string name="emptyWeight">Weight is empty!</string>
+    <string name="emptyHeight">Height is empty!</string>
+    <string name="wrongWeight">"Wrong weight value! Please input value higher than 0 and lower than 350."</string>
+    <string name="wrongHeight">"Wrong height value! Please input value higher than 0 and lower than 2.5."</string>
+</resources>

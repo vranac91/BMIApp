@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".activities.setup.InputDataActivity">
+
+    <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            style="@style/titleText"
+            android:text="@string/appTitleText"/>
+
+    <TextView
+            android:id="@+id/appDescriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/titleText"
+            style="@style/descriptionText"
+            android:textAlignment="center"
+            android:text="@string/appDescText"/>
+    <TextView
+            android:id="@+id/weightFieldName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/appDescriptionText"
+            style="@style/inputFieldNames"
+            android:text="@string/weightFieldName"/>
+
+    <EditText
+            android:id="@+id/weightInputField"
+            style="@style/inputFields"
+            app:layout_constraintTop_toBottomOf="@id/weightFieldName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:hint="@string/weightInputPlaceholder"/>
+    <TextView
+            android:id="@+id/inputFieldName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/weightInputField"
+            android:text="@string/heightFieldName"
+            style="@style/inputFieldNames"/>
+
+    <EditText
+            android:id="@+id/heightInputField"
+            style="@style/inputFields"
+            app:layout_constraintTop_toBottomOf="@id/inputFieldName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="@string/heightInputPlaceholder"/>
+
+    <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/heightInputField"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/marginStandard"
+            android:text="@string/calculateButtonText"/>
+
+</android.support.constraint.ConstraintLayout>

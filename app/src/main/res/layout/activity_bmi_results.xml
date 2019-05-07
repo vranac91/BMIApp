@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.results.BmiResultsActivity">
+
+    <TextView
+            android:id="@+id/calculationResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            style="@style/titleText"/>
+    <TextView
+            android:id="@+id/resultCategoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/calculationResult"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/titleText"/>
+    <LinearLayout
+            android:id="@+id/resultData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/resultCategoryName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/marginStandard">
+        <ImageView
+                android:id="@+id/resultCategoryImage"
+                android:layout_width="@dimen/imageWidth"
+                android:layout_height="@dimen/imageHeight"
+                app:layout_constraintTop_toBottomOf="@id/resultCategoryDescription"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginEnd="@dimen/marginStandard"/>
+        <TextView
+                android:id="@+id/resultCategoryDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/descriptionText"
+                app:layout_constraintTop_toBottomOf="@id/resultCategoryName"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginEnd="@dimen/marginStandard"/>
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/newCalculationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/resultData"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="@dimen/marginStandard"
+            android:text="@string/newCalculationButtonText"/>
+
+</android.support.constraint.ConstraintLayout>
